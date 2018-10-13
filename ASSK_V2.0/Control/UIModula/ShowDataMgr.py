@@ -3,7 +3,7 @@
 
 import numpy as np
 from pyqtgraph.Qt import QtCore
-from ASSKMgr import ASSKMgr
+from Server.ASSKMgr import ASSKMgr
 
 
 # 图标展现类
