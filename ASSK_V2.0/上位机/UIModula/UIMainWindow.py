@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'UIMainWindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1280, 800)
+        MainWindow.setStyleSheet("background:rgb(0, 0, 0)")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.widget = QtWidgets.QWidget(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
+        self.widget.setSizePolicy(sizePolicy)
+        self.widget.setAutoFillBackground(False)
+        self.widget.setObjectName("widget")
+        self.horizontalLayout.addWidget(self.widget)
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.btnStart = QtWidgets.QPushButton(self.centralwidget)
+        self.btnStart.setMinimumSize(QtCore.QSize(100, 100))
+        self.btnStart.setMaximumSize(QtCore.QSize(100, 100))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.btnStart.setFont(font)
+        self.btnStart.setAutoFillBackground(False)
+        self.btnStart.setStyleSheet("background:rgb(0, 255, 0);")
+        self.btnStart.setObjectName("btnStart")
+        self.verticalLayout.addWidget(self.btnStart)
+        self.btnStop = QtWidgets.QPushButton(self.centralwidget)
+        self.btnStop.setMinimumSize(QtCore.QSize(100, 100))
+        self.btnStop.setMaximumSize(QtCore.QSize(100, 100))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.btnStop.setFont(font)
+        self.btnStop.setStyleSheet("background:rgb(255, 0, 0)")
+        self.btnStop.setObjectName("btnStop")
+        self.verticalLayout.addWidget(self.btnStop)
+        self.btnExport = QtWidgets.QPushButton(self.centralwidget)
+        self.btnExport.setMinimumSize(QtCore.QSize(100, 100))
+        self.btnExport.setMaximumSize(QtCore.QSize(100, 100))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.btnExport.setFont(font)
+        self.btnExport.setStyleSheet("background:rgb(255, 255, 0)")
+        self.btnExport.setObjectName("btnExport")
+        self.verticalLayout.addWidget(self.btnExport)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem)
+        self.btnShutDown = QtWidgets.QPushButton(self.centralwidget)
+        self.btnShutDown.setMinimumSize(QtCore.QSize(100, 100))
+        self.btnShutDown.setMaximumSize(QtCore.QSize(100, 100))
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        self.btnShutDown.setFont(font)
+        self.btnShutDown.setStyleSheet("background:rgb(0, 0, 255)")
+        self.btnShutDown.setObjectName("btnShutDown")
+        self.verticalLayout.addWidget(self.btnShutDown)
+        self.horizontalLayout.addLayout(self.verticalLayout)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1280, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "ASSK"))
+        self.btnStart.setText(_translate("MainWindow", "开始"))
+        self.btnStop.setText(_translate("MainWindow", "暂停"))
+        self.btnExport.setText(_translate("MainWindow", "导出"))
+        self.btnShutDown.setText(_translate("MainWindow", "关闭"))
+
