@@ -3,15 +3,15 @@
 
 import threading
 import datetime
-from UIModula.PlotCanvas import PlotCanvas
 from SerialModula.SerialCommunication import SerialCommunication
+import numpy as np
 
 
 class ASSKMgr:
     s = SerialCommunication()   # 实例化串口通讯类
     fetch_x = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     fetch_y = s.y
-    plotCanvas = PlotCanvas()
+    showDataList = np.array([])
 
     @classmethod
     def __init__(cls):
@@ -25,7 +25,7 @@ class ASSKMgr:
 
     @classmethod
     def flash(cls):
-        cls.plotCanvas.update_figure(cls.fetch_x, cls.fetch_y)
+        cls.showDataList = np.append(cls.showDataList, np.linspace(int(cls.fetch_x), int(cls.fetch_y)))
 
     @classmethod
     def start_serial_process(cls):

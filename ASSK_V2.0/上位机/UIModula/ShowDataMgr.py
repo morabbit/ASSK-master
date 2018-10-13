@@ -3,6 +3,7 @@
 
 import numpy as np
 from pyqtgraph.Qt import QtCore
+from ASSKMgr import ASSKMgr
 
 
 # 图标展现类
@@ -21,14 +22,18 @@ class ShowDataMgr(QtCore.QObject):
         self.matplot = self.canvas.addPlot(title="气氛浓度(ppm)")
         self.matplot.plot(self.showDataList, pen=(200, 200, 200), symbolBrush=(255, 0, 0), symbolPen='w')
 
+        # Call ASSKMgr start function
+        ASSKMgr.start_serial_process()
+
         # 创建定时器
         timer = QtCore.QTimer(self)
-        timer.timeout.connect(self.test_update_figure)
+        timer.timeout.connect(self.update_figure)
         timer.start(100)  # 每0.1秒更新一次图像
 
     # 更新数据接口
-    def update_figure(self, x=0, y=0):
-        self.showDataList = np.append(self.showDataList, np.linspace(x, y))
+    def update_figure(self):
+        # self.showDataList = np.append(self.showDataList, np.linspace(x, y))
+        self.showDataList = ASSKMgr.showDataList
         curve = self.matplot.plot(pen=(200, 200, 200), symbolBrush=(255, 0, 0), symbolPen='w')
         curve.setData(self.showDataList)
 

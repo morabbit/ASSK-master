@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.5 (ASSK_V2.0)" jdkType="Python SDK" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/上位机/SerialModula" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/上位机/Server" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/上位机/Test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/上位机/UIModula" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/下位机/sensor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/上位机" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/下位机" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.5" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
