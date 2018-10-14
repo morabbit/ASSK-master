@@ -3,13 +3,15 @@
 
 import threading
 import datetime
+import time
 from SerialModula.SerialCommunication import SerialCommunication
 import numpy as np
 
 
 class ASSKMgr:
     s = SerialCommunication()   # 实例化串口通讯类
-    fetch_x = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    #fetch_x = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    fetch_x = time.time() 
     fetch_y = s.y
     showDataList = np.array([])
 
@@ -25,6 +27,8 @@ class ASSKMgr:
 
     @classmethod
     def flash(cls):
+        cls.fetch_x = time.time() 
+        cls.fetch_y = s.y
         cls.showDataList = np.append(cls.showDataList, np.linspace(int(cls.fetch_x), int(cls.fetch_y)))
 
     @classmethod

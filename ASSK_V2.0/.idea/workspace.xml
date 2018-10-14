@@ -71,13 +71,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ASSKMgr.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ASSKMgr.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Control/Server/ASSKMgr.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="116">
+              <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
                 <element signature="e#16#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowDataMgr.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Control/UIModula/ShowDataMgr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="e#45#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,6 +113,7 @@
         <option value="$PROJECT_DIR$/上位机/UIModula/MainWindow.py" />
         <option value="$PROJECT_DIR$/上位机/Server/ASSKMgr.py" />
         <option value="$PROJECT_DIR$/上位机/UIModula/ShowDataMgr.py" />
+        <option value="$PROJECT_DIR$/Control/UIModula/ShowDataMgr.py" />
       </list>
     </option>
   </component>
@@ -223,16 +236,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="708" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17770597" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17770597" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5024233" side_tool="true" weight="0.3282313" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27380952" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.27380952" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32939914" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49919224" weight="0.3282313" />
       <window_info anchor="right" id="Structure" order="3" side_tool="true" visible="true" weight="0.15105008" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32939914" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49757674" weight="0.3282313" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -417,10 +431,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Control/Server/ASSKMgr.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="116">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="e#16#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Control/UIModula/ShowDataMgr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#45#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
